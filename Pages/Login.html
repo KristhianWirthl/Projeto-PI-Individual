@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Star Wars</title>
 </head>
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../Style/login.css">
 <body>
     <header>
         <div class="container">
             <image src="../Images/Star Wars Logo.png" class="logo"></image>
-            <h2>Star Wars</h2>
-            <nav>
+            <h1 class="titulo">Star Wars</h1>
+            <nav class="navs">
                 <a href="./Star Wars.html" class="navegacao">Home</a>
                 <a href="./Cadastro.html" class="navegacao">Cadastro</a>
                 <a href="./Login.html" class="navegacao_atual">Login</a>
@@ -20,9 +20,19 @@
             </nav>
         </div>
     </header>
-
-    <h2>Login</h2>
-    <input type="text" id="nome_input" placeholder="Digite seu Nome">
-    <input type="text" id="senha_input" placeholder="Digite sua Senha">
+    
+    <div class="form">
+        <div class="containerform">
+            <div class="titulo-form">
+                <h2>Login</h2>
+            </div>
+            <div class="inputs">
+                <audio id="musica" src="../Sound/StarWarsMain.mp3" autoplay loop></audio>
+                <input type="text" id="nome_input" placeholder="Nome Completo"><br>
+                <input type="text" id="senha_input" placeholder="Senha"><br>
+            </div>
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
 </body>
 </html>

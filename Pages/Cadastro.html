@@ -10,8 +10,8 @@
     <header>
         <div class="container">
             <image src="../Images/Star Wars Logo.png" class="logo"></image>
-            <h2>Star Wars</h2>
-            <nav>
+            <h1 class="titulo">Star Wars</h1>
+            <nav class="navs">
                 <a href="./Star Wars.html" class="navegacao">Home</a>
                 <a href="./Cadastro.html" class="navegacao_atual">Cadastro</a>
                 <a href="./Login.html" class="navegacao">Login</a>
@@ -21,14 +21,24 @@
         </div>
     </header>
 
-    <h2>Cadastro</h2>
-    <input type="text" id="nome_input" placeholder="Nome Completo">
-    <input type="text" id="idade_input" placeholder="Idade">
-    <input type="text" id="planeta_origem_input" placeholder="Planeta de Origem">
-    <input type="text" id="especie_input" placeholder="Espécie">
-    <input type="text" id="nave_input" placeholder="Nave">
-    <input type="text" id="email_input" placeholder="E-mail">
-    <input type="text" id="senha_input" placeholder="Senha">
-    <input type="text" id="confirmar_senha_input" placeholder="Confirmar Senha">
+    <div class="form">
+        <div class="containerform">
+            <div class="titulo-form">
+                <h2>Cadastro</h2>
+            </div>
+            <div class="inputs">
+                <audio id="musica" src="../Sound/StarWarsMain.mp3" autoplay loop></audio>
+                <input type="text" id="nome_input" placeholder="Nome Completo"><br>
+                <input type="text" id="idade_input" placeholder="Idade"><br>
+                <input type="text" id="planeta_origem_input" placeholder="Planeta de Origem"><br>
+                <input type="text" id="especie_input" placeholder="Espécie"><br>
+                <input type="text" id="nave_input" placeholder="Nave"><br>
+                <input type="text" id="email_input" placeholder="E-mail"><br>
+                <input type="text" id="senha_input" placeholder="Senha"><br>
+                <input type="text" id="confirmar_senha_input" placeholder="Confirmar Senha"><br>
+            </div>
+            <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
 </body>
 </html>
