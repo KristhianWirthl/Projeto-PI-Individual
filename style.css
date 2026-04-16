@@ -1,6 +1,6 @@
 body{
     background-image: url('Images/PlanodeFundo.webp');
-    color: yellow;
+    color: yellow;  
 }
 
 .div-logo{
@@ -51,7 +51,11 @@ body{
 }
 
 .footer{
-
+  background-color: #32b9cd;
+  height: 150px;
+  color: #fff;
+  display: flex;
+  font-size: 15px;
 }
 
 .form{
