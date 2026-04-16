@@ -1,1 +1,65 @@
 @import "../style.css";
+
+.codigojedi{
+    background-color: rgb(0, 0, 255);
+    width: 1000px;
+    height: 600px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 50px;
+}
+
+.codigosith{
+    background-color: rgb(255, 0, 0);
+    width: 1000px;
+    height: 600px;
+    margin-left: 500px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px; /*  espaçamento do rodapé/de baixo */
+}
+
+.imagemcodjedi{
+    width: 500px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 50px; /*  espaçamento do desenho usando a esquerda como referência */
+    margin-top: 50px; /*  espaçamento do cabeçalho/de cima */
+    padding-top: 50px; /*  definir a altura da imagem dentro do container */
+}
+
+.imagemcodsith{
+    width: 500px;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.textojedi{
+    text-align: center;
+    margin-top: 230px;
+    margin-right: 80px;
+}
+
+.textosith{
+    text-align: center;
+    margin-top: 220px;
+    margin-left: 70px;
+}
+
+.textosw{
+    text-align: center;
+    margin-top: 50px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

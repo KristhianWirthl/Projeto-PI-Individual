@@ -1,13 +1,12 @@
 @import "../style.css";
 
 .containerform{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-    background-color: #313137;
-    border-color: #f6ff00 2px;
-    border-radius: 20px;
-    width: 300px;
-    height: 420px;
+    display: flex; /*  permitir ajustar os itens de forma que eu preferir */
+    justify-content:center; /*  deixar os itens dentro do container centralizados verticalmente */
+    align-items:center; /*  deixar os itens dentro do container centralizados horizontalmente */
+    flex-direction: column; /*  deixar as informações alinhadas em forma de coluna */
+    background-color: #313137; /*  cor de fundo de tudo */
+    border-radius: 20px; /*  deixar redondo nas pontas */
+    width: 300px; /*  tamanho do container horizontalmente */
+    height: 420px; /*  tamanho do container verticalmente */
 }
