@@ -21,107 +21,283 @@
         </div>
     </header>
 
-    <audio id="musica" src="../Sound/StarWarsMain.mp3" autoplay loop></audio>
+    <div class="container-pergunta">
+        <h3>1. Qual a cor do sabre de luz de Luke Skywalker no primeiro filme</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Vermelho</button>
+                <button class="botao-opcao">Verde</button>
+                <button class="botao-opcao" onclick="verificar1()">Azul</button>
+                <button class="botao-opcao">Roxo</button>
+            </div>
+        </div>
+    </div>
 
-    
+    <div class="container-pergunta">
+        <h3>2. Quem construiu C-3PO</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Han Solo</button>
+                <button class="botao-opcao"onclick="verificar2()">Anakin Skywalker</button>
+                <button class="botao-opcao">Obi Wan Kenobi</button>
+                <button class="botao-opcao">Watto</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>3. Onde Yoda viveu durante seu exílio</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Tatooine</button>
+                <button class="botao-opcao">Hoth</button>
+                <button class="botao-opcao">Endor</button>
+                <button class="botao-opcao"onclick="verificar3()">Dagobah</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>4. Qual o nome da nave que Han Solo ganhou durante uma aposta de Lando Calrissian</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Slave 1</button>
+                <button class="botao-opcao"onclick="verificar4()">Millenium Falcon</button>
+                <button class="botao-opcao">Ghost</button>
+                <button class="botao-opcao">Razor Crest</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>5. Quem disse a frase "Eu sou seu pai"</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Imperador Palpatine</button>
+                <button class="botao-opcao">Conde Dooku</button>
+                <button class="botao-opcao" onclick="verificar5()">Darth Vader</button>
+                <button class="botao-opcao">Kylo Ren</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>6. Qual o nome do personagem entitulado como "Baby yoda"</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Din Djarin</button>
+                <button class="botao-opcao"onclick="verificar6()">Grogu</button>
+                <button class="botao-opcao">Yoda</button>
+                <button class="botao-opcao">Yaddle</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>7. Quem foi o mestre Jedi que treinou Qui Gon Jin</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Obi Wan Kenobi</button>
+                <button class="botao-opcao">Yoda</button>
+                <button class="botao-opcao">Mace Windu</button>
+                <button class="botao-opcao"onclick="verificar7()">Conde Dooku</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>8. Qual nome da espécie do Chewie</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao"onclick="verificar8()">Wookie</button>
+                <button class="botao-opcao">Humano</button>
+                <button class="botao-opcao">Trandoshiano</button>
+                <button class="botao-opcao">Neimodiano</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>9. Quantos anos Yoda tinha quando morreu</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">800</button>
+                <button class="botao-opcao"onclick="verificar9()">900</button>
+                <button class="botao-opcao">1000</button>
+                <button class="botao-opcao">1100</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>10. Qual o código do capitão Rex</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">CT-27-5555</button>
+                <button class="botao-opcao">CT-2224</button>
+                <button class="botao-opcao">CT-782</button>
+                <button class="botao-opcao"onclick="verificar10()">CT-7567</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>11. Qual a forma de combate de sabre de luz do Mace Windu</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Forma 3 (Soresu)</button>
+                <button class="botao-opcao">Forma 4 (Ataru)</button>
+                <button class="botao-opcao" onclick="verificar11()">Forma 7 (Vaapad)</button>
+                <button class="botao-opcao">Forma 5 (Shien)</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>12. Qual o nome da criatura encontrada no compactador de lixo da estrela da morte</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao" onclick="verificar12()">Dianoga</button>
+                <button class="botao-opcao">Wampa</button>
+                <button class="botao-opcao">Rancor</button>
+                <button class="botao-opcao">Sarlacc</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>13. Qual o nome raro usado na armadura dos mandalorianos</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Durastell</button>
+                <button class="botao-opcao">Cortosis</button>
+                <button class="botao-opcao" onclick="verificar13()">Beskar</button>
+                <button class="botao-opcao">Carbonite</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>14. Qual o clone que tentou matar Obi Wan Kenobi assim que começou a  Ordem 66</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Rex</button>
+                <button class="botao-opcao"onclick="verificar14()">Cody</button>
+                <button class="botao-opcao">Bly</button>
+                <button class="botao-opcao">Gree</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-pergunta">
+        <h3>15. Qual o nome da nave estelar Super Star Destroyer de Darth Vader</h3>
+        <div>
+            <div class="container-opcao">
+                <button class="botao-opcao">Devastator</button>
+                <button class="botao-opcao">Chimera</button>
+                <button class="botao-opcao" onclick="verificar15()">Executor</button>
+                <button class="botao-opcao">Eclipse</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <button onclick="validar()">Verificar Pontuação</button>
+    </div>
+
+    <audio id="musica" src="../Sound/BattleoftheHeroes.mp3" autoplay loop></audio>
+
+    <div id="div_mensagem"></div>
+
+        <footer>
+        <div class="footer">
+            <p>2026 Kristhian Wirthl - Star Wars Fan Page - STAR WARS © 2026 & TM Lucasfilm Ltd. All rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>
 
-Youngling
-Padawan
-Cavaleiro Jedi
-Mestre Jedi
-Grão-Mestre Jedi
+<script>
+    let pontuacao = 0;
+    let mensagem = '';
+    let botao = document.querySelectorAll("botao-opcao");
+    let index = 0;
 
-15 perguntas
+    function verificar1(){
+        pontuacao++;
+    }
 
-1 Qual a cor do sabre de luz de Luke Skywalker no primeiro filme
-vermelho
-verde
-azul
-roxo
+    function verificar2(){
+        pontuacao++;
+    }
 
-2 Quem construiu C-3PO
-Han Solo
-Anakin Skywalker
-Obi Wan Kenobi
-Watto
+    function verificar3(){
+        pontuacao++;
+    }
 
-3 Onde Yoda viveu durante seu exílio
-Tatooine
-Hoth
-Endor
-Dagobah
+    function verificar4(){
+        pontuacao++;
+    }
 
-4 Qual o nome da nave que Han Solo ganhou durante uma aposta de Lando Calrissian
-Slave 1
-Millenium Falcon
-Ghost
-Razor Crest
+    function verificar5(){
+        pontuacao++;
+    }
 
-5 Quem disse a frase "Eu sou seu pai"
-Imperador Palpatine
-Conde Dooku
-Darth Vader
-Kylo Ren
+    function verificar6(){
+        pontuacao++;
+    }
 
-6 Qual o nome do personagem entitulado como "Baby yoda"
-Din Djarin
-Grogu
-Yoda
-Yaddle
+    function verificar7(){
+        pontuacao++;
+    }
 
-7 Quem foi o mestre Jedi que treinou Qui Gon Jin
-Obi Wan Kenobi
-Yoda
-Mace Windu
-Conde Dooku
+    function verificar8(){
+        pontuacao++;
+    }
 
-8 Qual nome da espécie do Chewie
-Wookie
-Humano
-Trandoshiano
-Neimodiano
+    function verificar9(){
+        pontuacao++;
+    }
 
-9 Quantos anos Yoda tinha quando morreu
-800
-900
-1000
-1100
+    function verificar10(){
+        pontuacao++;
+    }
 
-10 Qual o código do capitão Rex
-CT-27-5555
-CT-2224
-CT-782
-CT-7567
-CT-99
+    function verificar11(){
+        pontuacao++;
+    }
 
-11 Qual a forma de combate de sabre de luz do Mace Windu
-Forma 3 (Soresu)
-Forma 4 (Ataru)
-Forma 7 (Vaapad)
-Forma 5 (Shien)
+    function verificar12(){
+        pontuacao++;
+    }
 
-12 Qual o nome da criatura encontrada no compactador de lixo da estrela da morte
-Dianoga
-Wampa
-Rancor
-Sarlacc
+    function verificar13(){
+        pontuacao++;
+    }
 
-13 Qual o nome raro usado na armadura dos mandalorianos
-Durastell
-Cortosis
-Beskar
-Carbonite
+    function verificar14(){
+        pontuacao++;
+    }
 
-14 Qual o clone que tentou matar Obi Wan Kenobi assim que começou a  Ordem 66
-Rex
-Cody
-Bly
-Gree
+    function verificar15(){
+        pontuacao++;
+    }
 
-15 Qual o nome da nave estelar Super Star Destroyer de Darth Vader
-Devastator
-Chimera
-Executor
-Eclipse
+    function validar(){
+        if (pontuacao >= 1 && pontuacao <= 3){
+            mensagem = `Youngling`;
+        } else if(pontuacao >= 4 && pontuacao <= 6){
+            mensagem = `Padawan`;
+        } else if(pontuacao >= 7 && pontuacao <= 9){
+            mensagem = `Cavaleiro Jedi`;
+        } else if(pontuacao >= 10 && pontuacao <= 12){
+            mensagem = `Mestre Jedi`;
+        } else if(pontuacao >= 13 && pontuacao <= 15){
+            mensagem = `Grão-Mestre Jedi`;
+        } else {
+            mensagem = `Sem Midichlorianos`;
+        }
+        div_mensagem.innerHTML = mensagem;
+    } 
+
+</script>
