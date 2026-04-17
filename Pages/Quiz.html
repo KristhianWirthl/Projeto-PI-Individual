@@ -17,6 +17,7 @@
                 <a href="./Login.html" class="navegacao">Login</a>
                 <a href="./Quiz.html" class="navegacao_atual">Quiz</a>
                 <a href="./Timeline.html" class="navegacao">Timeline</a>
+                <a href="./Dashboard.html" class="navegacao">Dashboard</a>
             </nav>
         </div>
     </header>
@@ -222,6 +223,7 @@
     let mensagem = '';
     let botao = document.querySelectorAll("botao-opcao");
     let index = 0;
+    let lista = [];
 
     function verificar1(){
         pontuacao++;
@@ -297,7 +299,9 @@
         } else {
             mensagem = `Sem Midichlorianos`;
         }
-        div_mensagem.innerHTML = mensagem;
+        div_mensagem.innerHTML = mensagem + `- ${pontuacao}`;;
+        lista.push(mensagem);
+
     } 
 
 </script>

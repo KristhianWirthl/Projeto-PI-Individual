@@ -23,13 +23,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center     ;
-    width: 800px;
+    width: 1200px;
     font-size: 35px;
     font-weight: 800;
 }
 
 .navegacao_atual{
-    width: 60px;
+    width: 70px;
     background: #f6ff00;
     border-radius: 5px;
     text-align: center;
@@ -37,7 +37,7 @@ body{
 }
 
 .navegacao{
-    width: 60px;
+    width: 70px;
     background: #f6ff00;
     border-radius: 5px;
     text-align: center;
