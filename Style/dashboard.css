@@ -1,1 +1,11 @@
 @import "../style.css";
+
+.grafico{
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    margin: auto;
+    background-color: #bbc8da;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}

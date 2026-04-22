@@ -55,3 +55,7 @@
 .resultado{
     margin-top: 20px;
 }
+
+.botao-opcao:hover{
+    background-color: red;
+}
