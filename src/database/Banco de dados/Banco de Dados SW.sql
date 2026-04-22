@@ -3,7 +3,7 @@ CREATE DATABASE STARWARS;
 USE STARWARS;
 
 CREATE TABLE usuario (
-    id INT PRIMARY KEY AUTO_INCREMENT;
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(45),
     idade INT,
     planeta_origem VARCHAR(100),
@@ -15,7 +15,7 @@ CREATE TABLE usuario (
 );
 
 CREATE TABLE ranking (
-    classificacao VARCHAR(25);
+    classificacao VARCHAR(25),
     fkusuario INT,
     CONSTRAINT constusuario FOREIGN KEY (fkusuario) REFERENCES usuario(id)
 );
