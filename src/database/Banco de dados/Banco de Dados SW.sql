@@ -16,6 +16,7 @@ CREATE TABLE usuario (
 
 CREATE TABLE ranking (
     classificacao VARCHAR(25),
+    pontuacao INT,
     fkusuario INT,
     CONSTRAINT constusuario FOREIGN KEY (fkusuario) REFERENCES usuario(id)
 );
