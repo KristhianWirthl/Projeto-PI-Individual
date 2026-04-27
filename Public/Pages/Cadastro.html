@@ -17,7 +17,7 @@
                 <a href="./Login.html" class="navegacao">Login</a>
                 <a href="./Quiz.html" class="navegacao">Quiz</a>
                 <a href="./Timeline.html" class="navegacao">Timeline</a>
-                <a href="./Dashboard.html" class="navegacao">Dashboard</a>
+                <a href="../Dashboard/Dashboard.html" class="navegacao">Dashboard</a>
             </nav>
         </div>
     </header>
@@ -35,8 +35,8 @@
                 <input type="text" id="especie_input" placeholder="Espécie"><br>
                 <input type="text" id="nave_input" placeholder="Nave"><br>
                 <input type="text" id="email_input" placeholder="E-mail"><br>
-                <input type="text" id="senha_input" placeholder="Senha"><br>
-                <input type="text" id="confirmar_senha_input" placeholder="Confirmar Senha"><br>
+                <input type="password" id="senha_input" placeholder="Senha"><br>
+                <input type="password" id="confirmar_senha_input" placeholder="Confirmar Senha"><br>
             </div>
             <button onclick="cadastrar()">Cadastrar</button>
         </div>
@@ -54,6 +54,8 @@
 
   function cadastrar() {
 
+    console.log("Chamei a função")
+
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
     var nomeVar = nome_input.value;
@@ -64,6 +66,8 @@
     var emailVar = email_input.value;
     var senhaVar = senha_input.value;
     var confirmarSenhaVar = confirmar_senha_input.value;
+
+    console.log(`Dados que vou capurar: ${nomeVar}, ${idadeVar}, ${planetaVar}, ${especieVar}, ${naveVar}, ${emailVar}, ${senhaVar}, ${confirmarSenhaVar}`)
 
     // Verificando se há algum campo em branco
     if (
@@ -77,13 +81,13 @@
       confirmarSenhaVar == "" 
     ) {
       cardErro.style.display = "block";
-      mensagem_erro.innerHTML =
-        "(Alerta, robô detectado, por favor preencha corretamente)";
+      // mensagem_erro.innerHTML =
+      //   "(Alerta, robô detectado, por favor preencha corretamente)";
 
-      finalizarAguardar();
-      return false;
-    } else {
-      setInterval(sumirMensagem, 5000);
+      console.log("Campos Vazios")
+
+      //finalizarAguardar();
+      //return false;
     }
 
     // Enviando o valor da nova input
@@ -102,7 +106,7 @@
         naveServer: naveVar,
         emailServer: emailVar,
         senhaServer: senhaVar,
-        confirmarSenhaServer: confirmarSenhaVar,
+        confirmarSenhaServer: confirmarSenhaVar
       }),
     })
       .then(function (resposta) {
@@ -118,17 +122,18 @@
             window.location = "login.html";
           }, "2000");
 
-          limparFormulario();
-          finalizarAguardar();
+          //limparFormulario();
+          //finalizarAguardar();
         } else {
           throw "Houve um erro ao tentar realizar o cadastro!";
         }
       })
       .catch(function (resposta) {
         console.log(`#ERRO: ${resposta}`);
-        finalizarAguardar();
+        //finalizarAguardar();
       });
 
     return false;
   }
+
 </script>

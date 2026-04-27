@@ -47,15 +47,19 @@ function autenticar(req, res) {
 }
 
 function cadastrar(req, res) {
+
+    console.log("Cheguei na Controller")
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    var nomeVar = req.body.nomeServer;
-    var idadeVar = req.body.idadeServer;
-    var planetaVar = req.body.planetaServer;
-    var especieVar = req.body.especieServer;
-    var naveVar = req.body.naveServer;
-    var emailVar = req.body.emailServer;
-    var senhaVar = req.body.senhaServer;
-    var confirmarSenhaVar = req.body.confirmarSenhaServer;
+    var nome = req.body.nomeServer;
+    var idade = req.body.idadeServer;
+    var planeta = req.body.planetaServer;
+    var especie = req.body.especieServer;
+    var nave = req.body.naveServer;
+    var email = req.body.emailServer;
+    var senha = req.body.senhaServer;
+    var confirmarSenha = req.body.confirmarSenhaServer;
+
+    console.log(`Dados a serem cadastrados: ${nome}, ${idade}, ${planeta}, ${especie}, ${nave}, ${email}, ${senha}, ${confirmarSenha}`)
 
     // Faça as validações dos valores
     if (nome == undefined) {
@@ -72,13 +76,13 @@ function cadastrar(req, res) {
         res.status(400).send("Seu email está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
-    } else if (confirmarsenha == undefined) {
+    } else if (confirmarSenha == undefined) {
         res.status(400).send("Sua confirmação de senha está undefined!");
     } else if (nome.length <= 1){
         res.status(400).send("Nome inválido!");
-
+    }else{
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, idade, planeta_origem, especie, nave, email, senha, confirmar_senha)
+        usuarioModel.cadastrar(nome, idade, planeta, especie, nave, email, senha, confirmarSenha)
             .then(
                 function (resultado) {
                     res.json(resultado);

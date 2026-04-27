@@ -17,7 +17,7 @@
                 <a href="./Login.html" class="navegacao_atual">Login</a>
                 <a href="./Quiz.html" class="navegacao">Quiz</a>
                 <a href="./Timeline.html" class="navegacao">Timeline</a>
-                <a href="./Dashboard.html" class="navegacao">Dashboard</a>
+                <a href="../Dashboard/Dashboard.html" class="navegacao">Dashboard</a>
             </nav>
         </div>
     </header>
@@ -30,9 +30,9 @@
             <div class="inputs">
                 <audio id="musica" src="../Sounds/Copyright Free Star Wars Music - The Path of the Force.mp3" autoplay loop></audio>
                 <input type="text" id="email_input" placeholder="Email"><br>
-                <input type="text" id="senha_input" placeholder="Senha"><br>
+                <input password="text" id="senha_input" placeholder="Senha"><br>
             </div>
-            <button onclick="cadastrar()">Cadastrar</button>
+            <button onclick="entrar()">Cadastrar</button>
         </div>
     </div>
 
@@ -48,7 +48,7 @@
 
 
     function entrar() {
-        aguardar();
+        //aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
@@ -56,11 +56,12 @@
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            //finalizarAguardar();
             return false;
         }
         else {
-            setInterval(sumirMensagem, 5000)
+            //setInterval(sumirMensagem, 5000)
+            console.log("Deu erro")
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -89,7 +90,7 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "../Dashboard/Dashboard.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
@@ -100,7 +101,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
+                    //finalizarAguardar(texto);
                 });
             }
 
@@ -111,8 +112,8 @@
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
 
 </script>
